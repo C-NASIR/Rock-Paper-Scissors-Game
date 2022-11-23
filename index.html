@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>Frontend Mentor | Rock, Paper, Scissors</title>
+  </head>
+  <body>
+    <!-- Model starts -->
+    <div id="rules-model" class="hidden">
+      <div>
+        <div id="model-header">
+          <h3>RULES</h3>
+          <button>X</button>
+        </div>
+        <img src="./images/image-rules.svg" alt="Image rules" />
+      </div>
+    </div>
+    <!-- Model ends -->
+
+    <!-- header start here -->
+    <div id="header">
+      <img src="./images/logo.svg" alt="logo" />
+      <div id="score-box">
+        <span id="score-text"> score </span>
+        <span id="score-number"> 0 </span>
+      </div>
+    </div>
+    <!-- header ends here-->
+
+    <!-- Main content starts here -->
+    <main id="selection">
+      <img
+        class="gesture paper"
+        src="./images/icon-paper.svg"
+        alt="hand icon paper"
+      />
+      <img
+        class="gesture scissors"
+        src="./images/icon-scissors.svg"
+        alt="hand icon Scissors"
+      />
+      <img
+        class="gesture rock"
+        src="./images/icon-rock.svg"
+        alt="hand icon rock"
+      />
+      <img src="./images/bg-triangle.svg" alt="triangle" />
+    </main>
+
+    <button id="rules">RULES</button>
+    <!-- Main content ends here -->
+
+    <script src="./script.js" type="text/javascript"></script>
+  </body>
+</html>

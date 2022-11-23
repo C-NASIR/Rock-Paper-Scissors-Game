@@ -1,0 +1,43 @@
+/* Import header and footer */
+@import url("./styles.css");
+
+#selection {
+  text-align: center;
+  width: fit-content;
+  margin: auto;
+  position: relative;
+}
+
+#triangle {
+  margin-top: 5em;
+  height: 10em;
+  width: 10em;
+}
+
+#selection .gesture:hover {
+  cursor: pointer;
+}
+
+#selection .paper {
+  position: absolute;
+  top: -3em;
+  left: -2.5em;
+}
+
+#selection .scissors {
+  position: absolute;
+  top: -3em;
+  right: -2.5em;
+}
+
+#selection .rock {
+  position: absolute;
+  bottom: -2.5em;
+  left: 25%;
+}
+
+@media only screen and (max-width: 390px) {
+  #selection {
+    width: 80%;
+  }
+}

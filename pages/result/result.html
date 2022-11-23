@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="result.css" />
+    <title>Frontend Mentor | Rock, Paper, Scissors</title>
+  </head>
+  <body>
+    <div id="notice" class="hidden">
+      SAFARI MY HAVE SOME PROBLEMS WITH THE ANIMATIONS. PLEASE USE CHROME FOR
+      BEST QUALITY
+    </div>
+    <!-- Model starts -->
+    <div id="rules-model" class="hidden">
+      <div>
+        <div id="model-header">
+          <h3>RULES</h3>
+          <button>X</button>
+        </div>
+        <img src="../../images/image-rules.svg" alt="Image rules" />
+      </div>
+    </div>
+    <!-- Model ends -->
+
+    <!-- Header section start -->
+    <div id="header">
+      <img src="../../images/logo.svg" alt="logo" />
+      <div id="score-box">
+        <span id="score-text"> score </span>
+        <span id="score-number"> 0 </span>
+      </div>
+    </div>
+    <!-- Head section end-->
+
+    <!-- Content start here -->
+    <main id="result" class="result-display">
+      <div>
+        <!-- User won ring start-->
+        <div class="ring outer-ring">
+          <div class="ring middle-ring">
+            <div class="ring inner-ring"></div>
+          </div>
+        </div>
+        <!-- User won ring end-->
+
+        <h4>YOU PICKED</h4>
+        <img class="gesture" alt="hand icon paper" />
+      </div>
+
+      <div class="play-again-container scaleDown hidden">
+        <h4 id="result-text">YOU WON</h4>
+        <button id="play-again">PLAY AGAIN</button>
+      </div>
+
+      <div class="last-div-in-grid">
+        <!-- Computer won ring start-->
+        <div class="ring outer-ring">
+          <div class="ring middle-ring">
+            <div class="ring inner-ring"></div>
+          </div>
+        </div>
+        <!-- Computer won ring end-->
+        <h4>THE HOUSE PICKED</h4>
+        <div class="empty">
+          <img class="gesture computer-choice hidden" alt="hand icon" />
+        </div>
+      </div>
+    </main>
+    <button id="rules">RULES</button>
+    <!-- Content end here-->
+    <script src="./script.js" type="text/javascript"></script>
+  </body>
+</html>
